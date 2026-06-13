@@ -12,7 +12,7 @@
   --gold: #f1b953;
   --white: #ffffff;
   --shadow: 0 28px 70px rgba(17, 17, 17, 0.18);
-  --header: 76px;
+  --header: 92px;
 }
 
 * {
@@ -78,7 +78,7 @@ a {
   justify-content: space-between;
   gap: 24px;
   min-height: var(--header);
-  padding: 14px clamp(18px, 4vw, 58px);
+  padding: 8px clamp(18px, 4vw, 58px);
   background: rgba(255, 253, 248, 0.9);
   border-bottom: 1px solid rgba(223, 215, 205, 0.88);
   backdrop-filter: blur(20px);
@@ -87,38 +87,20 @@ a {
 .brand {
   display: inline-flex;
   align-items: center;
+  flex: 0 1 auto;
   min-width: 0;
-  gap: 12px;
   text-decoration: none;
 }
 
-.brand-mark {
-  display: grid;
-  flex: 0 0 auto;
-  width: 42px;
-  height: 42px;
-  place-items: center;
-  color: var(--white);
-  background: var(--ink);
-  border-radius: 50%;
-  font-weight: 900;
-  letter-spacing: 0;
-}
-
-.brand strong,
-.brand small {
+.brand-logo {
   display: block;
+  width: clamp(178px, 18vw, 232px);
+  height: auto;
 }
 
-.brand strong {
-  font-size: 0.98rem;
-  line-height: 1.1;
-}
-
-.brand small {
-  color: var(--muted);
-  font-size: 0.78rem;
-  line-height: 1.25;
+.brand:focus-visible {
+  outline: 3px solid rgba(182, 95, 35, 0.38);
+  outline-offset: 6px;
 }
 
 .nav-links {
@@ -735,15 +717,15 @@ h3 {
 
 @media (max-width: 640px) {
   :root {
-    --header: 68px;
+    --header: 78px;
   }
 
   .site-header {
     padding-inline: 16px;
   }
 
-  .brand small {
-    max-width: 170px;
+  .brand-logo {
+    width: clamp(150px, 45vw, 178px);
   }
 
   .hero {
