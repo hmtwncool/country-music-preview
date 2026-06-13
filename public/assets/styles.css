@@ -172,6 +172,7 @@ a {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: 42% center;
 }
 
 .hero::before {
@@ -552,6 +553,14 @@ h3 {
   object-fit: cover;
 }
 
+.gallery-grid article:nth-child(2) img {
+  object-position: 38% center;
+}
+
+.gallery-grid article:nth-child(3) img {
+  object-position: 58% center;
+}
+
 .gallery-grid h3,
 .gallery-grid p {
   padding-inline: 24px;
@@ -706,7 +715,7 @@ h3 {
   }
 
   .hero-media img {
-    object-position: 64% center;
+    object-position: 37% center;
   }
 
   .portrait-panel,
