@@ -717,6 +717,16 @@ h3 {
     max-width: 520px;
   }
 
+  .hero::before {
+    background:
+      linear-gradient(90deg, rgba(17, 17, 17, 0.94) 0%, rgba(17, 17, 17, 0.84) 66%, rgba(17, 17, 17, 0.58) 100%),
+      linear-gradient(0deg, rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.32) 54%);
+  }
+
+  .hero-media img {
+    object-position: 64% center;
+  }
+
   .portrait-panel,
   .portrait-panel img {
     min-height: 370px;
@@ -739,16 +749,6 @@ h3 {
   .hero {
     min-height: 92vh;
     padding-top: calc(var(--header) + 46px);
-  }
-
-  .hero::before {
-    background:
-      linear-gradient(90deg, rgba(17, 17, 17, 0.94) 0%, rgba(17, 17, 17, 0.84) 66%, rgba(17, 17, 17, 0.58) 100%),
-      linear-gradient(0deg, rgba(17, 17, 17, 0.78), rgba(17, 17, 17, 0.32) 54%);
-  }
-
-  .hero-media img {
-    object-position: 64% center;
   }
 
   h1 {
